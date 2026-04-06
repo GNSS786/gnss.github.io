@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Nanak Sr. Sec. School</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:Arial,sans-serif;}
+        .header{background:#1a1a2e;color:white;padding:20px;text-align:center;}
+        .header h1{font-size:28px;}
+        .header p{color:#f4c10f;margin-top:5px;}
+        .nav{background:#f4c10f;padding:15px;text-align:center;}
+        .nav a{color:#1a1a2e;text-decoration:none;margin:0 15px;font-weight:bold;}
+        .nav a:hover{text-decoration:underline;}
+        .hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200');background-size:cover;padding:80px 20px;text-align:center;color:white;}
+        .hero h2{font-size:36px;}
+        .hero button{background:#f4c10f;color:#1a1a2e;padding:12px 25px;border:none;font-size:18px;margin-top:20px;cursor:pointer;border-radius:5px;}
+        .section{padding:50px 20px;text-align:center;}
+        .section h3{font-size:28px;margin-bottom:30px;color:#1a1a2e;}
+        .box-container{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:auto;}
+        .box{background:#f9f9f9;padding:25px;width:250px;border-radius:10px;}
+        .box i{font-size:40px;color:#f4c10f;}
+        .box h4{margin:15px 0;}
+        .staff-table{overflow-x:auto;max-width:1000px;margin:auto;}
+        table{width:100%;border-collapse:collapse;}
+        th,td{padding:12px;border-bottom:1px solid #ddd;text-align:left;}
+        th{background:#1a1a2e;color:white;}
+        .notice-list{max-width:600px;margin:auto;text-align:left;}
+        .notice-item{background:#f9f9f9;padding:15px;margin:10px 0;border-left:4px solid #f4c10f;}
+        .contact-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;max-width:1000px;margin:auto;}
+        .contact-info{text-align:left;}
+        .contact-info p{margin:10px 0;}
+        footer{background:#1a1a2e;color:white;text-align:center;padding:30px;margin-top:30px;}
+        .admin-btn{position:fixed;bottom:20px;right:20px;background:#1a1a2e;color:#f4c10f;padding:10px 15px;border-radius:20px;font-size:12px;cursor:pointer;text-decoration:none;}
+        [contenteditable="true"]{border:1px dashed #ccc;padding:5px;min-height:30px;}
+        @media (max-width:600px){.box{width:100%;}.nav a{display:inline-block;margin:5px;}}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="header">
+    <h1 contenteditable="true" id="schoolName">Guru Nanak Sr. Sec. School</h1>
+    <p contenteditable="true" id="tagline">G.N. International Avenue, Bhuna Road, Ratia</p>
+</div>
+
+<div class="nav">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#staff">Staff</a>
+    <a href="#notice">Notice</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="hero">
+    <h2 contenteditable="true" id="heroText">Welcome to Guru Nanak Sr. Sec. School</h2>
+    <p contenteditable="true" style="font-size:18px;">"Quality Education for a Bright Future"</p>
+    <button onclick="location.href='#contact'">Admission Enquiry</button>
+</div>
+
+<div id="about" class="section">
+    <div class="container">
+        <h3>About <span style="color:#f4c10f;">Our School</span></h3>
+        <p contenteditable="true" style="max-width:800px;margin:auto;line-height:1.8;">Guru Nanak Sr. Sec. School is a premier educational institution affiliated with CBSE. We provide quality education from Nursery to Class XII with modern facilities, experienced teachers, and excellent co-curricular activities.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h3>Why Choose <span style="color:#f4c10f;">Us?</span></h3>
+    <div class="box-container">
+        <div class="box"><i class="fas fa-chalkboard-user"></i><h4>Experienced Faculty</h4><p>Qualified and dedicated teachers</p></div>
+        <div class="box"><i class="fas fa-laptop-code"></i><h4>Smart Classes</h4><p>Digital learning environment</p></div>
+        <div class="box"><i class="fas fa-trophy"></i><h4>Sports & Activities</h4><p>Excellent sports facilities</p></div>
+        <div class="box"><i class="fas fa-bus"></i><h4>Transport Facility</h4><p>Safe bus service</p></div>
+    </div>
+</div>
+
+<div id="staff" class="section" style="background:#f9f9f9;">
+    <h3>Our <span style="color:#f4c10f;">Staff</span></h3>
+    <div class="staff-table">
+        <table id="staffTable">
+            <thead><tr><th>S.No.</th><th>Name</th><th>Designation</th><th>Qualification</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td contenteditable="true">Mr. Gurmeet Singh</td><td contenteditable="true">Principal</td><td contenteditable="true">M.A., B.Ed.</td></tr>
+                <tr><td>2</td><td contenteditable="true">Mrs. Paramjit Kaur</td><td contenteditable="true">Vice Principal</td><td contenteditable="true">M.Sc., B.Ed.</td></tr>
+                <tr><td>3</td><td contenteditable="true">Mr. Harpreet Singh</td><td contenteditable="true">PGT Maths</td><td contenteditable="true">M.Sc., B.Ed.</td></tr>
+                <tr><td>4</td><td contenteditable="true">Mrs. Manjeet Kaur</td><td contenteditable="true">PGT English</td><td contenteditable="true">M.A., B.Ed.</td></tr>
+                <tr><td>5</td><td contenteditable="true">Mr. Rajesh Kumar</td><td contenteditable="true">PGT Physics</td><td contenteditable="true">M.Sc., B.Ed.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="notice" class="section">
+    <h3>Notice <span style="color:#f4c10f;">Board</span></h3>
+    <div class="notice-list" id="noticeList">
+        <div class="notice-item"><strong>📢 15 August 2024</strong><br>School will remain closed for Independence Day</div>
+        <div class="notice-item"><strong>📢 20 August 2024</strong><br>Parent-Teacher Meeting scheduled</div>
+        <div class="notice-item"><strong>📢 1 September 2024</strong><br>Half Yearly Examination starts</div>
+    </div>
+</div>
+
+<div id="contact" class="section" style="background:#f9f9f9;">
+    <h3>Contact <span style="color:#f4c10f;">Us</span></h3>
+    <div class="contact-grid">
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt" style="color:#f4c10f;width:25px;"></i> <strong>Address:</strong> <span contenteditable="true">Bhuna Road, Ratia, Fatehabad (Haryana) - 125051</span></p>
+            <p><i class="fas fa-phone" style="color:#f4c10f;width:25px;"></i> <strong>Phone:</strong> <span contenteditable="true">9812437327</span></p>
+            <p><i class="fas fa-envelope" style="color:#f4c10f;width:25px;"></i> <strong>Email:</strong> <span contenteditable="true">gnsssratia@gmail.com</span></p>
+            <p><i class="fas fa-clock" style="color:#f4c10f;width:25px;"></i> <strong>Timings:</strong> <span contenteditable="true">8:00 AM - 2:00 PM (Mon-Fri)</span></p>
+        </div>
+        <div>
+            <iframe src="https://maps.google.com/maps?q=Ratia+Fatehabad+Haryana&t=&z=13&output=embed" width="100%" height="250" style="border:0;border-radius:10px;"></iframe>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Guru Nanak Sr. Sec. School | Designed by IT Department</p>
+    <p>Bhuna Road, Ratia, Fatehabad (Haryana) - 125051 | 9812437327</p>
+</footer>
+
+<a href="#" class="admin-btn" onclick="enableEdit()"><i class="fas fa-edit"></i> Edit Mode</a>
+
+<script>
+    function enableEdit() {
+        var elements = document.querySelectorAll('[contenteditable="true"]');
+        for(var i=0; i<elements.length; i++) {
+            elements[i].setAttribute('contenteditable', 'true');
+            elements[i].style.border = '1px dashed #f4c10f';
+            elements[i].style.padding = '5px';
+        }
+        alert('Edit mode enabled! Click on any text to edit. Refresh page to exit edit mode.');
+    }
+    
+    // Save edited content to localStorage
+    window.onbeforeunload = function() {
+        var data = {};
+        data.schoolName = document.getElementById('schoolName')?.innerHTML;
+        data.tagline = document.getElementById('tagline')?.innerHTML;
+        data.heroText = document.getElementById('heroText')?.innerHTML;
+        localStorage.setItem('schoolData', JSON.stringify(data));
+    }
+    
+    // Load saved content
+    function loadData() {
+        var saved = localStorage.getItem('schoolData');
+        if(saved) {
+            var data = JSON.parse(saved);
+            if(data.schoolName) document.getElementById('schoolName').innerHTML = data.schoolName;
+            if(data.tagline) document.getElementById('tagline').innerHTML = data.tagline;
+            if(data.heroText) document.getElementById('heroText').innerHTML = data.heroText;
+        }
+    }
+    loadData();
+</script>
+</body>
+</html>
